@@ -24,15 +24,17 @@
 	    </div>
 	  </div>
 	</nav>
-	
-	<div class="container">
+
+
+	<div class="my-3 container-fluid">
 		<div class="row">
 			<h1>Lista de alumnos</h1>
 		</div>
 	</div>
 
-	<table class="table">
-	  <thead class="table-dark">
+
+	<table class="m-1 table table-striped">
+	  <thead>
 	    <tr>
 	      <th scope="col">#</th>
 	      <th scope="col">NOMBRE</th>
@@ -44,7 +46,7 @@
 	      <th scope="col">ACCIONES</th>
 	    </tr>
 	  </thead>
-	  <tbody>
+	  <tbody class="table-group-divider">
 	    <tr th:each="alm: ${alumnos}">
 	      <th th:text="${alm.id}" scope="row"></th>
 	      <td th:text="${alm.nombre}"></td>

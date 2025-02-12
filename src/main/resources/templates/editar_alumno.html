@@ -26,40 +26,41 @@
         </li>
       </ul>
     </div>
+	  <button type="button" class="btn btn-danger">Cerrar sesión</button>
   </div>
 </nav>
 
-	<div class="container">
+	<div class="mt-5 container">
 		<div
 			class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
-			<h1 class="text-center">Actualizar datos de alumno</h1>
+			<h1 class="mt-2 text-center">Actualizar datos de alumno</h1>
 			<div class="card-body">
 				<form th:action=@{/alumno/{id}(id=${alumno_update.id})} method="POST" th:object=${alumno_update}>
-					<div class="form-group">
+					<div class="mt-2 form-group">
 						<label>Nombre: </label> <input type="text" name="nombre" th:field=*{nombre}
 							class="form-control" placeholder="Ingrese su nombre" required>
 					</div>
 
-					<div class="form-group">
+					<div class="mt-2 form-group">
 						<label>Apellido: </label> <input type="text" name="apellido" th:field=*{apellido}
 							class="form-control" placeholder="Ingres su apellido" required>
 					</div>
 
-					<div class="form-group">
+					<div class="mt-2 form-group">
 						<label>Telefono: </label> <input type="text" name="telefono" th:field=*{telefono}
 							class="form-control" placeholder="Ingrese su telefono" required>
 					</div>
-					<div class="form-group">
+					<div class="mt-2 form-group">
 						<label>Email: </label> <input type="text" name="email" th:field=*{email}
 							class="form-control" placeholder="Ingrese su correo" required>
 					</div>
 
-					<div class="form-group">
+					<div class="mt-2 form-group">
 						<label>D.N.I: </label> <input type="text" name="dni" th:field=*{dni}
 							class="form-control" placeholder="Ingrese su dni" required>
 					</div>
-					
-					<div class="form-group">
+
+					<div class="mt-2 form-group">
 						<label>Fecha de nacimiento: </label> <input type="text" name="fecha_nac" th:field=*{fecha_nac}
 							class="form-control" placeholder="YYYY-MM-DD" required>
 					</div>

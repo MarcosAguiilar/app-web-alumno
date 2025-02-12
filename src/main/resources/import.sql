@@ -4,4 +4,5 @@ INSERT INTO alumno (nombre,apellido,telefono,email,dni,fecha_nac) VALUES("Xavi",
 INSERT INTO alumno (nombre,apellido,telefono,email,dni,fecha_nac) VALUES("Eric","Bellón","786234567","eb@gmail.com", "356789733X","01-02-2000");
 INSERT INTO alumno (nombre,apellido,telefono,email,dni,fecha_nac) VALUES("Laura","Garcia","893765211","lg@gmail.com", "789645366Z","24-11-2004");
 
-INSERT INTO usuario (nombre,email,username,password,activo) VALUES("Marcos", "ma@gmail.com", "admin", "1234", false);
+INSERT INTO usuario (nombre,email,username,password,activo) VALUES("Marcos", "ma@gmail.com", "admin", "1234", true);
+INSERT INTO usuario (nombre,email,username,password,activo) VALUES("Tania", "th@gmail.com", "tania", "4321", true);
